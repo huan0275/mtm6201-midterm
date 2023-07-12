@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cake Heaven</title>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <!-- fake hamburger menu -->
+        <nav role="navigation">
+            <ul role="list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <li itemprop="home"><a href="index.html">Home</a></li>
+                <li itemprop="about"><a href="about.html">About</a></li>
+                <li itemprop="shop"><a href="#">Shop</a></li>
+                <li itemprop="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- I used the hamburger menu in the hifi prototype which had been done in April for Design Foundations course, when I had no idea that this would be coded out in July. I've searched some info online and the hamburger menu involes too much stuff unlearnt. So I made a change (back to the traditional menu but still with the hamburger but it won't worker as the real one supposed to)-->
+        <picture class="logo">
+            <source media="(min-width: 990px)" srcset="/images/logo_big_2.png">
+            <source media="(max-width:989px)" srcset="/images/logo_1.png">
+            <img src="/images/logo_1.png" alt="logo">
+        </picture>
+        <!-- the logo will be used a bigger one when the viewport goes to 990px. -->
+    </header>
+
+    <main role=main>
+        <h1 role="heading">Summer Offer</h1>
+        <div class="action">
+            <button role="button">Order Now!</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Copyright Cake Heaven 2023
+
+        <a href="https://instagram.com/cakeheaven" target="_blank">
+            <i class="fa-brands fa-instagram fa-shake" style="color: #e2e3e4;"></i>
+        </a>
+        <!-- used awesome fonts to show the instagram icon here, the same as about/contact page -->
+    </footer>
+
+</body>
+
+</html>

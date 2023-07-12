@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <a href="index.html">
+            <picture class="logo">
+                <source media="(min-width: 990px)" srcset="/images/logo_big_2.png">
+                <source media="(max-width:989px)" srcset="/images/logo_1.png">
+                <img src="/images/logo_1.png" alt="logo">
+            </picture>
+        </a>
+         
+    </header>
+    <section class="contact-us">
+    <div class="contact">
+            <div class="message">
+                <h5>
+                    Find Our Store Right Now! <a href="#store-location">&darr;</a>
+                </h5>
+                <!-- only makes sense in the mobile version -->
+                <h2>
+                    Your Suggestion Matters
+                </h2>
+               
+                <form class="form">
+                    <div>
+                        <label for="name">Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="name" name="name" required>
+                     </div>
+                    <div>
+                    <label for="email">E-mail Address</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                    <label for="phone">Phone Number</label>
+                     </div>
+                    <div>
+                         <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label>
+                    </div>
+                <div>
+                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                </form>
+                 <button type="submit" class="submit">
+                        Submit
+                    </button>
+               
+            </div>
+
+        <div class="our-store">
+            <h2>Our Store</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7700198109583!2d-75.75982286646911!3d45.34909572275814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680029714585!5m2!1sen!2sca"
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="googlemap" id="store-location">
+            </iframe>
+        </div>
+
+
+
+    </div>
+    </section>
+
+    <footer>
+
+        &copy; Copyright Cake Heaven 2023
+    
+            <a href="https://instagram.com/cakeheaven" target="_blank">
+                <i class="fa-brands fa-instagram fa-shake" style="color: #e2e3e4;"></i>
+            </a>
+    </footer>
+</body>
+
+</html>

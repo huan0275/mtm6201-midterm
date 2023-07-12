@@ -1,0 +1,86 @@
+body {
+    background-image: url(/images/mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    
+}
+.logo{
+position:fixed;
+right:0;
+top:0;
+}
+
+footer{
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    top:88%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6rem;
+  }
+  .contact-us {
+    margin: 0 auto;
+  }
+  input {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+textarea{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+label{
+    margin-top: 1.5rem;
+    margin-bottom:1.5rem;
+}
+button{
+    padding:1rem 1rem;
+    font-size: 1rem;
+    background-color: #A4D7B0;
+    border-radius: .3rem;
+    border: none;
+    color:white;
+}
+@media screen and (min-width:960px)
+  
+    {
+        body{
+            background-image: url(/images/photoshoped.png);
+      }
+    .contact   {
+        display:flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin:0 auto;
+        
+    }
+    h2{
+        flex-basis: 100%;
+    }
+    /* make h2 takes over the whole row and two divs half of the screen each */
+    .message .our-store{
+        flex-basis: 50%;
+        flex-grow: 1;
+        margin:0 auto;
+        width: 100%;
+    }
+    .message {
+        margin: 0 auto;
+    }
+    
+    /* make the div in the center of the screen no matter the viewport */
+    .our-store{
+        margin:0 auto;
+    }
+    .contact-us{
+        
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,161 @@
+body {
+    background-image: url(/images/mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.logo{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: end;
+  
+}
+.hamburger {
+  width: 2.5rem;
+  height: .5rem;
+  background-color:#A4D7B0;
+  margin-bottom:.3rem;
+  border-radius: .7rem;
+}
+
+.hamburger-menu{
+  position: absolute;
+  top:28%;
+  left:7%;
+}
+nav {
+    width: 200px;  
+    background-color: #f2f2f2;  
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    left:5%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  }
+  
+  nav li {
+    padding: 10px;
+ 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color:#FFFFFF;
+    
+  }
+   
+  nav ul li:hover {
+    background-color:#A4D7B0;  
+    border-radius: .4rem;
+    transform:scale(1.5);
+    transition: transform 0.7s ease-in-out;
+  }
+/* animation one below */
+  @keyframes fake-dropdown {
+    0% { opacity: 0; transform: translatey(-100%); }
+    100% { opacity: 1; transform: translatey(0); }
+  }
+  nav ul li,
+  .hamburger {
+    animation-name: fake-dropdown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+  /* one animation here: make the nav seemingly drop down like a hamburger but again i haven't learnt that yet */
+
+  @keyframes look-at-me {
+    0% { transform: translate(-50%, -50%); }
+    10% { transform: translate(-50%, -50%) ; }
+    20% { transform: translate(-50%, -50%) rotate(4deg); }
+    30% { transform: translate(-50%, -50%) rotate(-4deg); }
+    40% { transform: translate(-50%, -50%) rotate(4deg); }
+    50% { transform: translate(-50%, -50%) rotate(-4deg); }
+    60% { transform: translate(-50%, -50%) rotate(4deg); }
+    70% { transform: translate(-50%, -50%) rotate(-4deg); }
+    80% { transform: translate(-50%, -50%) rotate(4deg); }
+    90% { transform: translate(-50%, -50%) rotate(-4deg); }
+    100% { transform:translate(-50%, -50%); }
+  }
+  
+  .action:hover {
+    animation: look-at-me .7s infinite;
+    transform: translate(-50%, -50%);
+  }
+/* This is the 2nd animation enabling the hover effect that the order now div will shake thus attracting people's attention  */
+
+  h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:3rem;
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#FFFFFF;
+     
+  }
+  .action{
+    position: fixed;
+    top:59%;
+    left:50%;
+    transform: translate(-50%, -50%);
+ 
+  }
+  button:hover{
+    cursor: pointer;
+  }
+
+  button{
+    background-color:#A4D7B0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+  }
+  footer{
+    text-align: center;
+    margin-top: 3rem;
+    position: fixed;
+    top:88%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6rem;
+  }
+
+  @media screen and (min-width:990px)
+  {
+    body{
+        background-image: url(/images/photoshoped.png);
+  }
+  .logo{
+    position: fixed;
+    right:3%;
+    top:3%;
+  }  
+  button{
+        padding:1.2rem 1.2rem;
+        font-size: 2rem;
+    }
+    .hamburger-menu{
+      position: absolute;
+      top:21%;
+      left:7%;
+    }
+    nav ul li {
+      font-size: 1.6rem;
+    }
+}
