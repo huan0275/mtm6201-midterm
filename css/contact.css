@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/mobile.png);
+    background-image: url(images/mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +50,7 @@ button{
   
     {
         body{
-            background-image: url(/images/photoshoped.png);
+            background-image: url(images/photoshoped.png);
       }
     .contact   {
         display:flex;

@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/mobile.png);
+    background-image: url(images/mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -139,7 +139,7 @@ nav {
   @media screen and (min-width:990px)
   {
     body{
-        background-image: url(/images/photoshoped.png);
+        background-image: url(images/photoshoped.png);
   }
   .logo{
     position: fixed;
