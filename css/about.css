@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(images/mobile.png);
+    background-image: url("../images/mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +144,7 @@ footer{
   @media screen and (min-width:990px)
   {
     body{
-        background-image: url(images/photoshoped.png);
+        background-image: url("../images/photoshoped.png");
   }
   input {
         height: 3.4rem;
