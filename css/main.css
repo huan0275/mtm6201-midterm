@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/mobile.png);
+    background-image: url("../images/mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     
